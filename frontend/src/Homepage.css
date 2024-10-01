@@ -1,0 +1,64 @@
+/* Homepage.css */
+
+.form-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Center the form vertically */
+  flex-direction: column; /* Stack the form elements vertically */
+  width: 100%; /* Full width */
+  max-width: 600px; /* Increased max width for the form */
+  margin: 40px auto; /* Center container with margin */
+  padding: 40px; /* Increased padding around the container */
+  background-color: #f9f9f9; /* Light background color for the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.5); /* Hard white shadow */
+  animation: slideIn 0.8s ease-in-out forwards; /* Dramatic slide-in animation */
+  transform: translateY(-50px); /* Start from above */
+  opacity: 0; /* Start invisible */
+}
+
+/* Keyframes for the slide-in animation */
+@keyframes slideIn {
+  to {
+    transform: translateY(0); /* End position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column; /* Stack input elements */
+  width: 100%; /* Full width */
+}
+
+.signup-form input {
+  margin-bottom: 20px; /* Increased space between inputs */
+  padding: 15px; /* Increased padding inside input */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Increased font size */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.signup-form input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow effect on focus */
+}
+
+.signup-form button {
+  padding: 15px; /* Increased padding inside button */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Increased font size */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.signup-form button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
